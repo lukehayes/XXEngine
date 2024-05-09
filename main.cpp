@@ -1,4 +1,6 @@
 #include "raylib.h"
+#include "gfx/renderer.h"
+#include <iostream>
 
 int main() {
 
@@ -7,14 +9,12 @@ int main() {
     SetTargetFPS(60);
 
     while (!WindowShouldClose()) {
-        //game.deltaTime = GetFrameTime();
-        //printf("Delta %f \n", game.deltaTime);
 
-        ClearBackground(Color{40,40,40,255});
-        BeginDrawing();
-        EndDrawing();
+        std::cout << "Delta: " << GetFrameTime() << std::endl;
+
+        XX::GFX::Renderer::begin(BLACK);
+        XX::GFX::Renderer::end();
     }
-
 
     CloseWindow();
 
