@@ -41,6 +41,10 @@ target_link_libraries(${BIN_NAME} raylib)
 # 
 target_link_libraries(${BIN_NAME} XXGFX)
 
+# Build XXGFX library.
+# 
+target_link_libraries(${BIN_NAME} XXEntity)
+
 # Build game library.
 # 
 #target_link_libraries(${BIN_NAME} GameLib)
