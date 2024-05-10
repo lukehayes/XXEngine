@@ -43,12 +43,6 @@ namespace XX::GFX
 	private:
 
 	};
-
-	Renderer::Renderer() {
-	}
-
-	Renderer::~Renderer() {
-	}
 }
 
 #endif // !XX_GFX_RENDERER

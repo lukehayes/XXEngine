@@ -31,15 +31,15 @@ include_directories(${INCLUDE_DIRS})
 # 
 add_executable(${BIN_NAME} main.cpp ${SRC_FILES})
 
-#add_subdirectory(src)
+add_subdirectory(src)
 
 # Link in any libraies the binary needs.
 # 
 target_link_libraries(${BIN_NAME} raylib)
 
-# Build Cute Engine library.
+# Build XXGFX library.
 # 
-#target_link_libraries(${BIN_NAME} XXLib)
+target_link_libraries(${BIN_NAME} XXGFX)
 
 # Build game library.
 # 
